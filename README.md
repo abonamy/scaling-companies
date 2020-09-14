@@ -21,10 +21,10 @@ python manage.py migrate
 
 Populate the database
 ```sh
-# move the json file next to the script "db_scripts.py"
+# move the json file next to the script "db_script.py"
 # rename the json file to "data.json"
 
-python db_scripts.py
+python db_script.py
 ```
 
 ## Test
