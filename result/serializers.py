@@ -16,6 +16,7 @@ class CompanySerializer(serializers.HyperlinkedModelSerializer):
         model = Company
         fields = ('id', 'name', 'siren', 'sector', 'results')
 
+    # https://stackoverflow.com/a/52182750
     def to_representation(self, instance):
         ret = super().to_representation(instance)
         ret['sector'] = instance.get_sector_display()
